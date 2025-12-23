@@ -1,0 +1,687 @@
+/*imported fonts from Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+/*Common css properties for website*/
+*{
+    padding: 0;
+    margin: 0;
+    border: border-box;
+}
+
+a{
+    font-size: 18px;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(160,32,240);
+}
+
+/*Navigative bar Css properties*/
+#navbar{
+    background-color: #A8D5E3;
+    height: 100px;
+    margin-bottom:20px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    border: 2px solid transparent;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Classes having border name is set to the given properties below*/
+.border{
+    border: 2px solid transparent;
+}
+
+.border:hover{
+    border: 2px solid white;
+}
+/*Logo of wesbite*/
+.nav-logo{
+    height: 80px;
+    width: 100px;
+    background-image: url(logo.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.address-i{
+    color: darkmagenta;
+    display: flex;
+    align-items: center;
+}
+
+.a1{
+    color: darkmagenta;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+
+.a2{
+    margin-left: 3px;
+    font-size: 1rem;
+}
+/*Search bar of website*/
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 600px;
+    border-radius: 5px;
+}
+
+.nav-search:hover{
+    border: 2px solid rgb(160,32,240);
+}
+
+.search-select{
+    background-color: aliceblue;
+    width: 40px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+}
+
+.search-input{
+    background-color: aliceblue;
+    width: 100%;
+    font-size: 1rem;
+    color: rgba(0,0,0,0.5);
+    border: none;
+}
+
+.search-i{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: rgb(160,32,240);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+span{
+    font-size: 0.9rem;
+}
+/*Sign in */
+.nav-signin{
+    font-size: 1rem;
+}
+/*Return and order*/
+.nav-ro{
+    font-size: 1rem;
+}
+/*Cart*/
+.nav-cart i{
+    font-size: 30px;
+}
+
+#cart{
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+/*Panel operators of website*/
+#panel{
+    height: 40px;
+    background-color: rgba(168,213,227,0.75);
+    color: rgba(139,0,139,0.75);
+    align-items: center;
+}
+.panel-all{
+    display: inline;
+    font-size: 1.20em;
+    font-weight: 600;
+}
+.panel-ops{
+    position: absolute;
+    left: 80px;
+    top: 125px;
+    font-size: 1.2em;
+}
+.panel-ops a{
+    margin-right: 150px;
+}
+/*Card Box*/
+.shop-card{
+    background-color: rgba(255,192,203,0.25);
+    height: 300px;
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card1{
+    height: 280px;
+    width: 300px;
+    border: 2px outset white;
+    background-color: whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card1-img{
+    background-image: url(C1.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 50%;
+    margin-right: 5px;
+}
+.card1-imgg{
+    background-image: url(C11.jpg);
+    background-size: cover;
+    height:200px;
+    width: 50%;
+}
+.c1img{
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 1px;
+}
+.card2{
+    height: 280px;
+    width: 280px;
+    border: 2px outset white;
+    background-color: whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card2 p{
+    font-size: 1.5rem;
+}
+.b1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.b2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card2 a:hover{
+    text-decoration: underline;
+}
+.card3{
+    height: 280px;
+    width: 290px;
+    border: 2px outset white;
+    background-color: whitesmoke;
+}
+.c3img{
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card3-img{
+    background-image: url(C2.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 50%;
+    margin-right: 5px;
+}
+.card3-imgg{
+    background-image: url(C3.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 48%;
+}
+.card4{
+    height: 280px;
+    width: 280px;
+    border: 2px outset white;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+}
+.card4-img{
+    background-image: url(HC11.jpg);
+    background-size: cover;
+    height: 200px;
+}
+/*Content Section of website*/
+#hero{
+    background-image: url(hero.jpg);
+    background-size: cover;
+    height: 400px;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero-mess{
+    background-color: antiquewhite;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 0.85rem;
+    font-weight: 500;
+    width: 80%;
+    margin-bottom: 50px;
+}
+/*Shop Box Section*/
+.shop-sec1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color:rgba(255,192,203,0.25);
+    padding-bottom: 30px;
+}
+.box{
+    border: 2px solid transparent;
+    height: 510px;
+    width: 23%;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/*Box 1 images*/
+.boxx1-img{
+    background-image: url(Box1.jpg);
+    background-size: cover; 
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.boxxx1-img{
+    background-image: url(Box1-.jpg);
+    background-size: cover;
+    height: 215px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*Box 2  images*/
+.boxx2-img{
+    background-image: url(Box2.jpg);
+    background-size: cover;
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.boxxx2-img{
+    background-image: url(Box2-.jpg);
+    background-size: cover;
+    height: 215px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*Box 3 images*/
+.boxx3-img{
+    background-image: url(Box3.jpg);
+    background-size: cover;
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.boxxx3-img{
+    background-image: url(Box3-.jpg);
+    background-size: cover;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*Box 4 images*/
+.boxx4-img{
+    background-image: url(Box4.jpg);
+    background-size: cover;
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.boxxx4-img{
+    background-image: url(Box4-.jpg);
+    background-size: cover;
+    height: 215px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.boxx5-img{
+    background-image: url(Box5.png);
+    background-size: cover;
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.boxxx5-img{
+    background-image: url(Box5-.webp);
+    background-size: cover;
+    height: 215px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.boxx6-img{
+    background-image: url(Box6.jpg);
+    background-size: cover;
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.boxxx6-img{
+    background-image: url(Box6-.jpg);
+    background-size: cover;
+    height: 215px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.boxx7-img{
+    background-image: url(Box7.jpg);
+    background-size: cover;
+    height: 450px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.boxx8-img{
+    background-image: url(Box8.jpg);
+    background-size: cover;
+    height: 450px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*Shop section 2*/
+.shop-sec2{
+    height: 700px;
+    background-color: rgba(255,192,203,0.25);
+}
+.shop-sec2 h2{
+    padding: 10px;
+    padding: 20px;
+}
+.shop-explore{
+    height: 600px;
+    background-color: rgb(252,204,188);
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.shop-explore h2{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+/*Books section*/
+.books{
+    height: 500px;
+    width: 300px;
+    text-align: center;
+    display: flexbox;
+    flex-wrap: wrap;
+}
+.books h2{
+    margin-bottom: 5px;
+    margin-right: 50px;
+    font-size: 1.5rem;
+}
+/* Book 1 image*/
+.book1-img{
+    background-image: url(B1.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 130px;
+    margin-left: 70px;
+    margin-right: 10px;
+}
+/*Book 2 image*/
+.book2-img{
+    background-image: url(B2.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 130px;
+    margin-left: 70px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+/*Video games section*/
+.video-games{
+    height: 500px;
+    width: 300px;
+    text-align: center;
+    display: flexbox;
+    flex-wrap: wrap;
+}
+.video-games h2{
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+/* Video game 1 image*/
+.games1-img{
+    background-image: url(V1.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 160px;
+    margin-left: 80px;
+}
+/* video game 2 image*/
+.games2-img{
+    background-image: url(V2.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 160px;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+/*Sports and outdoor section*/
+.sports{
+    height: 500px;
+    width: 300px;
+    text-align: center;
+    display: flexbox;
+    flex-wrap: wrap;
+}
+.sports h2{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+/* Sports 1 image*/
+.sports1-img{
+    background-image: url(S1.png);
+    background-size: cover;
+    height: 200px;
+    width: 190px;
+    margin-left: 80px;
+}
+/* Sports 2 image*/
+.sports2-img{
+    background-image: url(S2.png);
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+/* Watches section*/
+.watches{
+    height: 500px;
+    width: 300px;
+    text-align: center;
+    display: flexbox;
+    flex-wrap: wrap;
+}
+.watches h2{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.watch1-img{
+    background-image: url(W1.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 190px;
+    margin-left: 80px;
+}
+.watch2-img{
+    background-image: url(W2.webp);
+    background-size: cover;
+    height: 200px;
+    width: 190px;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+/*Footer properties*/
+.BTT {
+    background-color: #A8D5E3;
+    height: 45px;
+    font-size: 0.85rem;
+    text-align: center;
+}
+.BTT a{
+    
+    border: 2px solid transparent;
+}
+.BTT a:Hover{
+    border: 2px solid darkmagenta;
+    border-radius: 30px;
+}
+.foot-panel1{
+    background-color: rgb(255, 253, 208);
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 20px;
+}
+ul a{
+    display: block;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.foot-panel2{
+    background-color: rgb(255, 253, 208);
+    border-top: 0.5px solid white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-logo{
+    height: 80px;
+    width: 100px;
+    background-image: url(logob.png);
+    background-size: cover;
+}
+footer{
+    background-color: rgb(255, 253, 208);
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+.foot-end{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+/*Delivery*/
+/*General Modal Styles*/
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 10px;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 20px;
+    /* margin-bottom: 10px; */
+}
+
+p {
+    /* margin: 0 0 10px; */
+    line-height: 1.5;
+} */
+
+/* Address Card Styles */
+.address-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: border 0.3s ease;
+}
+
+.address-card.default {
+    border: 2px solid #007bff;
+    background: #f0f9ff;
+}
+
+.address-card:hover {
+    border-color: #007bff;
+}
+
+.address-card .tag {
+    font-size: 12px;
+    color: #007bff;
+}
+
+/* Add Address Link */
+.add-address {
+    display: block;
+    margin: 10px 0;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.add-address:hover {
+    text-decoration: underline;
+}
+
+/* Pincode Entry */
+.pincode-entry {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.pincode-entry input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pincode-entry button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pincode-entry button:hover {
+    background-color: #0056b3;
+}  

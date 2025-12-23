@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Selections</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="Stylesheet" href="style.css">
+    <style>
+        .acc-content{
+            height: 550px;
+            background-color: rgba(255,192,203,0.5);
+            padding-top: 50px;
+            padding-left: 90px;
+            padding-right: 90px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        /*Account window row1*/
+        .acc-content1{
+            margin-top: 200px;
+            height: 800px;
+            display: flexbox;
+            flex-wrap: wrap;
+        }
+        .head{
+            height: 60px;
+            background-color: #A8D5E3;
+            margin-top: 10px;
+            padding: 5px;
+            text-align: center;
+        }
+        .orderr{
+            height: 120px;
+            width: 460px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 2px solid transparent;
+            background-color: whitesmoke;
+            margin-bottom: 25px;
+            border-radius: 20px;
+        }
+        .orderr-con{
+            font-size: 1.5rem;
+        }
+        .orderr:hover{
+            border: 3px solid white;
+        }
+        .orderr-i{
+            font-size: 1.9rem;
+        }
+        .business-set{
+            height: 120px;
+            width: 460px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 2px solid transparent;
+            background-color: whitesmoke;
+            margin-bottom: 25px;
+            border-radius: 20px;
+        }
+        .business-set:hover{
+            border: 3px solid white;
+        }
+        .business-i{
+            font-size: 1.9rem;
+        }
+        .business-con{
+            font-size: 1.5rem;
+        }
+        .payment{
+            height: 120px;
+            width: 460px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 2px solid transparent;
+            background-color: whitesmoke;
+            margin-bottom: 25px;
+            border-radius: 20px;
+        }
+       .payment:hover{
+            border: 3px solid white;
+        }
+        .payment-i{
+            font-size: 1.9rem;
+        }
+        .payment-con{
+            font-size: 1.5rem;
+        }
+        /*Account window 2nd row*/
+        .acc-content2{
+            margin-top: 200px;
+            height: 800px;
+            display: flexbox;
+            flex-wrap: wrap;
+        }
+        .login{
+            height: 120px;
+            width: 460px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 2px solid transparent;
+            background-color: whitesmoke;
+            margin-bottom: 25px;
+            border-radius: 20px;
+        }
+        .login-i{
+            font-size: 1.9rem;
+        }
+        .login-con{
+            font-size: 1.5rem;
+        }
+        .login:hover{
+            border: 3px solid white;
+        }
+        .addresss{
+            height: 120px;
+            width: 460px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 2px solid transparent;
+            background-color: whitesmoke;
+            margin-bottom: 25px;
+            border-radius: 20px;
+        }
+        .addresss:hover{
+            border: 3px solid white;
+        }
+        .addresss-i{
+            font-size: 1.9rem;
+            color: black;
+        }
+        .addresss-con{
+            font-size: 1.5rem;
+        }
+        .email{
+            height: 120px;
+            width: 460px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 2px solid transparent;
+            background-color: whitesmoke;
+            margin-bottom: 25px;
+            border-radius: 20px;
+        }
+        .email-i{
+            font-size: 1.9rem;
+        }
+        .email-con{
+            font-size: 1.2rem;
+        }
+        .email:hover{
+            border: 3px solid white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <a href="home.html"><div class="nav-logo border"></div></a>
+            
+            <a href="Delivery.html">
+                <div class="nav-address border"><!--For Delivery address-->
+                <p class="a1">Deliver to</p>  
+                <div class="address-i">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <p class="a2">India</p>
+                </div> 
+                </div>
+            </a>
+    
+            <div class="nav-search">
+                <select class="Search-select">
+                    <option>All</option>
+                </select>
+                <input class="search-input" placeholder="Search SmartSelections" name="Search">
+                <div class="search-i">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+    
+            <a href="account.html">
+                <div class="nav-signin border">
+                <p><span><small>Hello, Sign in</small></span></p>
+                <p class="acc">Account</p>
+                </div>
+            </a>
+    
+            <a href="orders.html">
+                <div class="nav-ro border">
+                <p><span><Small>Returns</Small></span></p>
+                <p class="order">& Orders</p>
+                </div>
+            </a>
+    
+            <div class="nav-cart i">
+                <a id="cart" href="My cart.html"><i class="fa-solid fa-cart-shopping"></i>
+                Cart</a>
+            </div>
+        </div>
+    
+        <div id="panel">
+            <a href="#"><div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                ALL
+            </div></a>
+    
+            <div class="panel-ops">
+                <p><a href="today.html">Today's deals</a>
+                <a href="customer.html">Customer service</a>
+                <a href="gift.html">Gift Cards</a>
+                <a href="buy_again.html">Buy Again</a></p>
+            </div>
+        </div>
+    </header>
+            <div class="acc">
+                <div class="head">
+                <h2>SmartSelections</h2>
+                <p><a href="Account.html">Manage your Account</a></p>
+                </div>
+                <div class="acc-content">
+                    <div class="acc-content1">
+                    <div class="orderr">
+                        <div class="orderr-i">
+                        <i class="fa-solid fa-bag-shopping"></i></div>
+                        <div class="orderr-con">
+                        <P><h2>Your Orders</h2></P>
+                        <p><a href="orders.html">Track, return or Buy again</a></p>
+                        </div>
+                    </div>
+                    <div class="business-set">
+                        <div class="business-i">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                        <div class="business-con">
+                            <P><h2>Business Settings</h2></P>
+                            <p><a href="#">Set up and manage your business</a></p>
+                        </div>
+                    </div>
+                    <div class="payment">
+                        <div class="payment-i">
+                            <i class="fa-solid fa-money-bill"></i>
+                        </div>
+                        <div class="payment-con">
+                            <p><h2>Payment Options</h2></p>
+                            <p><a href="#">Edit or add Payment Methods</a></p>
+                        </div>
+                        <div class="payment-con">
+
+                        </div>
+                    </div>
+                    </div>
+                    <div class="acc-content2">
+                        <div class="login">
+                            <div class="login-i">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                            <div class="login-con">
+                                <p><h2>Login & Security</h2></p>
+                                <p><a href="#">Edit login, name and mobile number</a></p>
+                            </div>
+                        </div>
+                        <div class="addresss">
+                            <div class="addresss-i">
+                                <i class="fa-solid fa-location-crosshairs"></i>
+                            </div>
+                            <div class="addresss-con">
+                                <p><h2>Your Addresses</h2></p>
+                                <p><a href="Delivery.html">Edit addresses for orders and gifts</a></p>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div class="email-i">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="email-con">
+                                <p><h2>Email Alerts, messages, and ads</h2></p>
+                                <p><a href="#">Edit now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <footer>
+            <div class="BTT">
+            <a href="#" class="top">Back to Top &#8593;</a>
+            </div>
+    
+            <div class="foot-panel1">
+                <ul>
+                    <p><h4>Get to know us</h4></p>
+                    <a href="Careers.html">Careers</a>
+                    <a href="Blog.html">Blog</a>
+                    <a href="About.html">About SmartSelections</a>
+                </ul>
+                <ul>
+                    <p><h4>Let Us Help You</h4></p>
+                    <a href="customer.html">Customer service</a>
+                    <a href="Shipping.html">Shipping rates & policies</a>
+                    <a href="Business-faq.html">Business FAQ</a>
+                </ul>
+                <ul>
+                    <p><h4>Support SmartSelections</h4></p>
+                    <a href="#">Sell</a>
+                    <a href="#">Advertise on SmartSelections</a>
+                </ul>
+                <ul>
+                    <p><h4>Buy for business</h4></p>
+                    <a href="today.html">Today's deals</a>
+                    <a href="buy_again.html">Buy again</a>
+                </ul>
+            </div>
+    
+            <div class="foot-panel2">
+               <a href="home.html"><div class="foot-logo"></div></a>
+               <i class="fa-solid fa-globe"></i>
+               <div class="icp-nav-globe-img-2 icp-button-globe-2"></div><span class="icp-color-base">English</span><span class="nav-arrow icp-up-down-arrow"></span><span class="aok-hidden" style="display:none">Choose a language for shopping.</span>
+               
+            </div>
+    
+            <div class="foot-end">
+            Made with &hearts; by SmartSelections <br>
+            &#169; 1980-2050, SmartSelections.com, Inc.
+            </div>
+        </footer>
+</body>
+</html>

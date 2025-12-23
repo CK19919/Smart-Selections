@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Selections</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="Stylesheet" href="style.css">
+    <style>
+        .hero-contentss{
+            height: 600px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items:flex-end;
+        }
+        .hero-content1{
+            height: 320px;
+            width: 250px;
+            border: 2px solid transparent;
+            margin-left: 10px;
+            margin-bottom: 25px;
+            position: absolute;
+            left: 10px;
+        }
+        .hero-content1:hover{
+            border: 2px solid white;
+        }
+        .hero-content2{
+            height:320px;
+            width: 250px;
+            border: 2px solid transparent;
+            margin-left: 10px;
+            margin-bottom: 5px;
+            position: absolute;
+            left: 270px;
+        }
+        .hero-content2:hover{
+            border: 2px solid white;
+        }
+        .t-img{
+            background-image: url(HC1.jpg);
+            background-size: cover;
+            height: 275px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 95%;
+            margin-left: 5px;
+        }
+        .t-img-{
+            background-image: url(HC2.jpg);
+            background-size: cover;
+            height: 275px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 95%;
+            margin-left: 5px;
+        }
+        .hero2{
+            padding-top: 10px;
+            background-color: rgba(250,235,215,0.5);
+            height: 950px;
+        }
+        .hero2 h2{
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+        .hero-contentsss{
+            background-color: rgba(255,0,0,0.7);
+            height: 420px;
+            margin: 0px 30px 0px 30px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        /*Hero content outer box*/
+        .hcbb{
+            height: 380px;
+            margin-top: 5px;
+            background-color: white;
+            border: 2px solid transparent;
+            border-radius: 20px;
+        }
+        /*Hero content inner box*/
+        .hcb{
+            height: 250px;
+            width: 240px;
+            border: 2px outset transparent;
+            margin: 5px 5px 15px 10px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+        }
+        /*Hero content 1 image*/
+        .hc1{
+            background-image: url(T1.png);
+            background-size: cover;
+            height: 250px;
+            width: 220px;
+            margin-left: 10px;
+        }
+        /*Hero content price tag */
+        .hpto p{
+            display: inline;
+            margin-left: 5px;
+        }
+        #p1{
+            background-color: rgba(255,0,0,1);
+            color: whitesmoke;
+        }
+        #p2{
+            font-size: 1rem;
+            font-weight: 600;
+            color: rgba(255,0,0,0.85);
+        }
+        #p3{
+            font-size: 1rem;
+            text-align: left;
+        }
+        /*Hero content 2 image*/
+        .hc2{
+            background-image: url(T2.png);
+            background-size: cover;
+            height: 240px;
+            width: 220px;
+            margin-right: 5px;
+        }
+        /*Hero content 3 image*/
+        .hc3{
+            background-image: url(T3.png);
+            background-size: cover;
+            height: 240px;
+            width: 220px;
+            margin-right: 5px;
+        }
+        /* Hero content 4 image*/
+        .hc4{
+            background-image: url(T4.png);
+            background-size: cover;
+            height: 240px;
+            width: 240px;
+            margin-right: 5px;
+        }
+        /*Hero content 5 image*/
+        .hc5{
+            background-image: url(T5.png);
+            background-size: cover;
+            height: 240px;
+            width: 240px;
+            margin-right: 5px;
+        }
+        /* Hero content 6 image*/
+        .hc6{
+            background-image: url(T6.png);
+            background-size: cover;
+            height: 240px;
+            width: 240px;
+            margin-right: 5px;
+        }
+        /*Hero content 7 image*/
+        .hc7{
+            background-image: url(T7.jpg);
+            background-size: cover;
+            height: 240px;
+            width: 240px;
+            margin-right: 5px;
+        }
+        /* Hero content 8 image*/
+        .hc8{
+            background-image: url(T8.png);
+            background-size: cover;
+            height: 240px;
+            width: 240px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <a href="home.html"><div class="nav-logo border"></div></a>
+            
+            <a href="Delivery.html">
+                <div class="nav-address border"><!--For Delivery address-->
+                <p class="a1">Deliver to</p>  
+                <div class="address-i">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <p class="a2">India</p>
+                </div> 
+                </div>
+            </a>
+    
+            <div class="nav-search">
+                <select class="Search-select">
+                    <option>All</option>
+                </select>
+                <input class="search-input" placeholder="Search SmartSelections" name="Search">
+                <div class="search-i">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+    
+            <a href="account.html">
+                <div class="nav-signin border">
+                <p><span><small>Hello, Sign in</small></span></p>
+                <p class="acc">Account</p>
+                </div>
+            </a>
+    
+            <a href="orders.html">
+                <div class="nav-ro border">
+                <p><span><Small>Returns</Small></span></p>
+                <p class="order">& Orders</p>
+                </div>
+            </a>
+    
+            <div class="nav-cart i">
+                <a id="cart" href="My cart.html"><i class="fa-solid fa-cart-shopping"></i>
+                Cart</a>
+            </div>
+        </div>
+    
+        <div id="panel">
+            <a href="#"><div class="panel-all">
+            <i class="fa-solid fa-bars"></i>
+            ALL
+        </div></a>
+            <div class="panel-ops">
+                <p><a href="today.html">Today's deals</a>
+                <a href="customer.html">Customer service</a>
+                <a href="gift.html">Gift Cards</a>
+                <a href="buy_again.html">Buy Again</a></p>
+            </div>
+        </div>
+    </header>
+        <div id="hero" style="background-image: url(TD.jpg); background-size: cover; height: 600px">
+            <div class="hero-contentss">
+            <div class="hero-content1">
+                <h4>Trending this season</h4>
+                <div class="t-img"></div>
+                <a href="#">Christmas store</a>
+            </div>
+            <div class="hero-content2">
+                <div class="t-img-"></div>
+                <a href="#">Holiday Gifts</a>
+            </div>
+            </div>
+        </div>
+    <div class="hero2">
+            <h2>Featured winter sale Deals</h2>
+        <div class="hero-contentsss">
+            <div class="hcbb"><!--Outer box-->
+                <div class="hcb"><!--Inner box-->
+                    <div class="hc1"></div><!--Content-->
+                </div>
+                <div class="hpto"><!--Discount box-->
+                    <p id="p1"> 50% OFF </p>  <p id="p2">Limited time deal</p><br>
+                    <p id="p3"><a href="#">Lymio Men Polyester Jackets||<br> Bomber jcket for men|| Lightweight<br> Outwear Sportswear Jacket</a></p>
+                </div>
+            </div>
+            <div class="hcbb">
+                <div class="hcb">
+                    <div class="hc2"></div>
+                </div>
+                <div class="hpto">
+                    <p id="p1"> 25% OFF </p>  <p id="p2">Limited time deal</p><br>
+                    <p id="p3"><a href="#">Redmi A4 5G (Sparkle Purple,<br> 4GB RAM,128GB Storage) 50MP<br> Dual Camera | 18W Fast Charging..</a></p>
+                </div>
+            </div>
+            <div class="hcbb">
+                <div class="hcb">
+                    <div class="hc3"></div>
+                </div>
+                <div class="hpto">
+                    <p id="p1"> 40% OFF </p>  <p id="p2">Limited time deal</p><br>
+                    <p id="p3"><a href="#">Apple MacBook Air Laptop:<br> Apple M1 chip, 13.3-inch/33.74<br> cm Retina Display, 8GB RAM...</a></p>
+                </div>
+            </div>
+            <div class="hcbb">
+                <div class="hcb">
+                    <div class="hc4"></div>
+                </div>
+                <div class="hpto">
+                    <p id="p1"> 35% OFF </p>  <p id="p2">Limited time deal</p><br>
+                    <p id="p3"><a href="#">VW 109 cm (43 inches) Playwall<br> Frameless Series Full HD Android <br>Smart LED TV VW43F2 (Black) </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-contentsss">
+            <div class="hcbb">
+                <div class="hcb">
+                    <div class="hc5"></div>
+                </div>
+                <div class="hpto">
+                    <p id="p1"> 70% OFF </p>  <p id="p2">Limited time deal</p><br>
+                    <p id="p3"><a href="#">boAt Rockerz 255 Pro+, 60HRS<br> Battery, Fast Charge, IPX7, Dual<br> Pairing, Low Latency, Magnetic..</a></p>
+                </div>
+            </div>
+            <div class="hcbb">
+                <div class="hcb">
+                    <div class="hc6"></div>
+                </div>
+                <div class="hpto">
+                    <p id="p1"> 70% OFF </p>  <p id="p2">Limited time deal</p><br>
+                    <p id="p3"><a href="#">Noise Twist Round dial Smart<br> Watch with Bluetooth Calling, <br>1.38" TFT Display, up-to 7 Days..</a></p>
+                </div>
+            </div>
+            <div class="hcbb">
+                <div class="hcb">
+                    <div class="hc7"></div>
+                </div>
+                <div class="hpto">
+                    <p id="p1"> 50% OFF </p>  <p id="p2">Limited time deal</p><br>
+                    <p id="p3"><a href="#">Da URBAN® Merlion Office<br> Chair,High Back Mesh Ergonomic<br> Home Office Desk Chair with 3..</a></p>
+                </div>
+            </div>
+            <div class="hcbb">
+                <div class="hcb">
+                    <div class="hc8"></div>
+                </div>
+                <div class="hpto">
+                    <p id="p1"> 55% OFF </p>  <p id="p2">Limited time deal</p><br>
+                    <p id="p3"><a href="#">ECOVACS DEEBOT N20 PRO <br>Robotic Vacuum Cleaner, 2024<br> New Launch, 8000Pa Strongest...</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer>
+            <div class="BTT">
+            <a href="#" class="top">Back to Top &#8593;</a>
+            </div>
+    
+            <div class="foot-panel1">
+                <ul>
+                    <p><h4>Get to know us</h4></p>
+                    <a href="Careers.html">Careers</a>
+                    <a href="Blog.html">Blog</a>
+                    <a href="About.html">About SmartSelections</a>
+                </ul>
+                <ul>
+                    <p><h4>Let Us Help You</h4></p>
+                    <a href="customer.html">Customer service</a>
+                    <a href="Shipping.html">Shipping rates & policies</a>
+                    <a href="Business-faq.html">Business FAQ</a>
+                </ul>
+                <ul>
+                    <p><h4>Support SmartSelections</h4></p>
+                    <a href="#">Sell</a>
+                    <a href="#">Advertise on SmartSelections</a>
+                </ul>
+                <ul>
+                    <p><h4>Buy for business</h4></p>
+                    <a href="today.html">Today's deals</a>
+                    <a href="buy_again.html">Buy again</a>
+                </ul>
+            </div>
+
+            
+            <div class="foot-panel2">
+               <a href="home.html"><div class="foot-logo"></div></a>
+               <i class="fa-solid fa-globe"></i>
+               <div class="icp-nav-globe-img-2 icp-button-globe-2"></div><span class="icp-color-base">English</span><span class="nav-arrow icp-up-down-arrow"></span><span class="aok-hidden" style="display:none">Choose a language for shopping.</span>
+               
+            </div>
+    
+            <div class="foot-end">
+            Made with &hearts; by SmartSelections <br>
+            &#169; 1980-2050, SmartSelections.com, Inc.
+            </div>
+        </footer>
+</body>
+</html>

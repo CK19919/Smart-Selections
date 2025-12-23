@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Selections</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="Stylesheet" href="style.css">
+    <style>
+        .ordr1-content{
+            background-color: rgba(255,192,203,0.5);
+            height: 1000px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .order1-upcontain{
+            border-radius: 20px;
+            height: 200px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: whitesmoke;
+            margin: 20px;
+        }
+        .order1-img{
+            background-image: url(O1.webp);
+            background-size: cover;
+            height: 180px;
+            width: 250px;
+        }
+        .order1-buttons{
+            height: 200px;
+        }
+        .order1-buttons button{
+            margin: 8px;
+            font-size: 1rem;
+            background-color: rgba(128,128,128,0.5);
+            text-decoration: none;
+            border: 2px solid transparent;
+        }
+        .order1-buttons button:hover{
+            background-color: rgba(128,128,128,0.8);
+            border: 2px solid white;
+        }
+        .order2-upcontain{
+            border-radius: 20px;
+            height: 220px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: whitesmoke;
+            margin: 20px;
+        }
+        .order2-img{
+            background-image: url(O2.webp);
+            background-size: cover;
+            height: 180px;
+            width: 200px;
+            margin-right: 50px;
+        }.order2-buttons{
+            height: 200px;
+        }
+        .order2-buttons button{
+            margin: 8px;
+            font-size: 1rem;
+            background-color: rgba(128,128,128,0.5);
+            text-decoration: none;
+            border: 2px solid transparent;
+        }
+        .order2-buttons button:hover{
+            background-color: rgba(128,128,128,0.8);
+            border: 2px solid white;
+        }
+        .order3-upcontain{
+            border-radius: 20px;
+            height: 200px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: whitesmoke;
+            margin: 20px;
+        }
+        .order3-img{
+            background-image: url(O3.webp);
+            background-size: cover;
+            height: 180px;
+            width: 190px;
+        }
+        .order3-buttons{
+            height: 200px;
+        }
+        .order3-buttons button{
+            margin: 8px;
+            font-size: 1rem;
+            background-color: rgba(128,128,128,0.5);
+            text-decoration: none;
+            border: 2px solid transparent;
+            margin-left: 20px;
+        }
+        .order3-buttons button:hover{
+            background-color: rgba(128,128,128,0.8);
+            border: 2px solid white;
+        }
+        .ordr2-content{
+            background-color: rgba(255,192,203,0.5);
+            height: 1000px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .ordr1-upcont{
+            border-radius: 20px;
+            height: 220px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: whitesmoke;
+            margin: 20px;
+        }
+        .ordr1-img{
+            background-image: url(O4.jpg);
+            background-size: cover;
+            height: 200px;
+            width: 250px;
+        }
+        .ordr1-buttons button{
+            margin: 8px;
+            font-size: 1rem;
+            background-color: rgba(128,128,128,0.5);
+            text-decoration: none;
+            border: 2px solid transparent;
+        }
+        .ordr1-buttons button:hover{
+            background-color: rgba(128,128,128,0.8);
+            border: 2px solid white;
+        }
+        .ordr3-content{
+            height: 500px;
+            background-color: rgba(255,192,203,0.5);
+        }
+        .order4-img{
+            background-image: url(C3.jpg);
+            background-size: cover;
+            height: 180px;
+            width: 170px;
+        }
+        .order5-img{
+            background-image: url(C2.jpg);
+            background-size: cover;
+            height: 200px;
+            width: 170px;
+        }
+    </style>
+</head>
+<header>
+    <div id="navbar">
+        <a href="home.html"><div class="nav-logo border"></div></a>
+        
+        <a href="Delivery.html">
+            <div class="nav-address border"><!--For Delivery address-->
+            <p class="a1">Deliver to</p>  
+            <div class="address-i">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <p class="a2">India</p>
+            </div> 
+            </div>
+        </a>
+
+        <div class="nav-search">
+            <select class="Search-select">
+                <option>All</option>
+            </select>
+            <input class="search-input" placeholder="Search SmartSelections" name="Search">
+            <div class="search-i">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <a href="account.html">
+            <div class="nav-signin border">
+            <p><span><small>Hello, Sign in</small></span></p>
+            <p class="acc">Account</p>
+            </div>
+        </a>
+
+        <a href="orders.html">
+            <div class="nav-ro border">
+            <p><span><Small>Returns</Small></span></p>
+            <p class="order">& Orders</p>
+            </div>
+        </a>
+
+        <div class="nav-cart i">
+            <a id="cart" href="My cart.html"><i class="fa-solid fa-cart-shopping"></i>
+            Cart</a>
+        </div>
+    </div>
+
+    <div id="panel">
+        <a href="#"><div class="panel-all">
+            <i class="fa-solid fa-bars"></i>
+            ALL
+        </div></a>
+
+        <div class="panel-ops">
+            <p><a href="today.html">Today's deals</a>
+            <a href="customer.html">Customer service</a>
+            <a href="gift.html">Gift Cards</a>
+            <a href="buy_again.html">Buy Again</a></p>
+        </div>
+    </div>
+</header>
+    <div class="ordr1-content">
+        <h1 style="text-align: center;">Your Orders</h1>
+       <div class="order1-upcontain">
+            <div class="order1">
+                <div class="order1-img"></div>
+            </div>
+            <div class="order1-info">
+                <h2>Order Placed</h2>
+                <p>Order #2848655</p>
+                <p><a href="#">LENOVO Legion Gaming laptop-intel i9<br>
+                5th gen, 32gb ram, NVIDIA GTX 3250...</a></p>
+                <p>Placed on 1st December 2024</p>
+                <p>Deliver to: Tony</p>
+            </div>
+            <div class="order1-t">
+                <p>Total: <i class="fa-solid fa-indian-rupee-sign"></i>1,71,599</p>
+            </div>
+            <div class="order1-buttons">
+                <button>Track Package</button><br>
+                <button>Print Packing slip</button><br>
+                <button>Return or replace items</button><br>
+                <button>Cancel Order</button><br>
+                <button>Write a Product review</button><br>
+            </div>
+       </div> 
+       <div class="order2-upcontain">
+        <div class="order2">
+            <div class="order2-img"></div>
+        </div>
+        <div class="order2-info">
+            <h2>Order placed</h2>
+            <p>Order #28486858</p>
+            <p><a href="#">LENOVO LEGION M200 RGB Gaming mouse</a></p>
+            <p>Placed on 29th November 2024</p>
+            <p>Deliver to: Tony</p>
+        </div>
+        <div class="order2-t">
+            <p>Total: <i class="fa-solid fa-indian-rupee-sign"></i>1,599</p>
+        </div>
+        <div class="order2-buttons">
+            <button>Track Package</button><br>
+            <button>Print Packing slip</button><br>
+            <button>Return or replace items</button><br>
+            <button>Cancel Order</button><br>
+            <button>Write a Product review</button><br>
+        </div>
+       </div>
+       <div class="order3-upcontain">
+        <div class="order3">
+            <div class="order3-img"></div>
+        </div>
+        <div class="order3-info">
+            <h2>Order placed</h2>
+            <p>Order #28485858</p>
+            <p><a href="#">ASTHETHIC WALL DECOR...</a></p>
+            <p>Placed on 25th November 2024</p>
+            <p>Deliver to: Tony</p>
+        </div>
+        <div class="order3-t">
+            <p>Total: <i class="fa-solid fa-indian-rupee-sign"></i>3,000</p>
+        </div>
+        <div class="order3-buttons">
+            <button>Track Package</button><br>
+            <button>Print Packing slip</button><br>
+            <button>Return or replace items</button><br>
+            <button>Cancel Order</button><br>
+            <button>Write a Product review</button><br>
+       </div>
+    </div>
+    <div class="ordr2 content">
+        <div class="ordr1-upcont">
+            <div class="ordr1">
+                <div class="ordr1-img"></div>
+            </div>
+            <div class="ordr1-info">
+                <h2>Order Placed</h2>
+                <p>Order #2848655</p>
+                <p><a href="#">New Fitness band D18 Smartwatch...</a></p>
+                <p>Placed on 20st November 2024</p>
+                <p>Deliver to: Tony</p>
+            </div>
+            <div class="ordr1-t">
+                <p>Total: <i class="fa-solid fa-indian-rupee-sign"></i>1,71,599</p>
+            </div>
+            <div class="ordr1-buttons">
+                <button>Track Package</button><br>
+                <button>Print Packing slip</button><br>
+                <button>Return or replace items</button><br>
+                <button>Cancel Order</button><br>
+                <button>Write a Product review</button><br>
+            </div>
+        </div>
+    </div>
+    <div class="ordr3-content">
+        <div class="order2-upcontain">
+            <div class="order2">
+                <div class="order4-img"></div>
+            </div>
+            <div class="order2-info">
+                <h2>Order placed</h2>
+                <p>Order #28486858</p>
+                <p><a href="#">Hauser XO Box of 10 color pens..</a></p>
+                <p>Placed on 9th November 2024</p>
+                <p>Deliver to: Tony</p>
+            </div>
+            <div class="order2-t">
+                <p>Total: <i class="fa-solid fa-indian-rupee-sign"></i>100</p>
+            </div>
+            <div class="order2-buttons">
+                <button>Track Package</button><br>
+                <button>Print Packing slip</button><br>
+                <button>Return or replace items</button><br>
+                <button>Cancel Order</button><br>
+                <button>Write a Product review</button><br>
+            </div>
+        </div>
+        <div class="order2-upcontain">
+            <div class="order2">
+                <div class="order5-img"></div>
+            </div>
+            <div class="order2-info">
+                <h2>Order placed</h2>
+                <p>Order #28486858</p>
+                <p><a href="#">Samsung Galaxy S24 Ultra Silicon Backcover</a></p>
+                <p>Placed on 15th october 2024</p>
+                <p>Deliver to: Tony</p>
+            </div>
+            <div class="order2-t">
+                <p>Total: <i class="fa-solid fa-indian-rupee-sign"></i>1,000</p>
+            </div>
+            <div class="order2-buttons">
+                <button>Track Package</button><br>
+                <button>Print Packing slip</button><br>
+                <button>Return or replace items</button><br>
+                <button>Cancel Order</button><br>
+                <button>Write a Product review</button><br>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="BTT">
+        <a href="#" class="top">Back to Top &#8593;</a>
+        </div>
+
+        <div class="foot-panel1">
+            <ul>
+                <p><h4>Get to know us</h4></p>
+                <a href="Careers.html">Careers</a>
+                <a href="Blog.html">Blog</a>
+                <a href="About.html">About SmartSelections</a>
+            </ul>
+            <ul>
+                <p><h4>Let Us Help You</h4></p>
+                <a href="customer.html">Customer service</a>
+                <a href="Shipping.html">Shipping rates & policies</a>
+                <a href="Business-faq.html">Business FAQ</a>
+            </ul>
+            <ul>
+                <p><h4>Support SmartSelections</h4></p>
+                <a href="#">Sell</a>
+                <a href="#">Advertise on SmartSelections</a>
+            </ul>
+            <ul>
+                <p><h4>Buy for business</h4></p>
+                <a href="today.html">Today's deals</a>
+                <a href="buy_again.html">Buy again</a>
+            </ul>
+        </div>
+
+        <div class="foot-panel2">
+           <a href="home.html"><div class="foot-logo"></div></a>
+           <i class="fa-solid fa-globe"></i>
+           <div class="icp-nav-globe-img-2 icp-button-globe-2"></div><span class="icp-color-base">English</span><span class="nav-arrow icp-up-down-arrow"></span><span class="aok-hidden" style="display:none">Choose a language for shopping.</span>
+           
+        </div>
+
+        <div class="foot-end">
+        Made with &hearts; by SmartSelections <br>
+        &#169; 1980-2050, SmartSelections.com, Inc.
+        </div>
+    </footer>
+</body>
+</html>

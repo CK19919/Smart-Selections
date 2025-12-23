@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Selections</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="Stylesheet" href="style.css">
+    <style>
+        .custom{
+            height: 500px;
+            background-color:rgba(248, 131, 121,0.5);
+        }
+        .c1{
+            height: 60px;
+            text-align: center;
+            border-bottom: 2px solid white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .c2{
+            display: flexbox;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 1.2rem;
+            margin: auto;
+            width: 500px;
+            margin-top: 20px;
+        }
+        .customer-input{
+            display: flex;
+            justify-content: space-evenly;
+            height: 40px;
+            width: 600px;
+            font-size: 1.5rem;
+            border-radius: 5px;
+            border: 2px solid transparent;
+        }
+        .customer-input:hover{
+            border: 2px solid white;
+        }
+        .c-i{
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+        }
+        .c-search{
+            font-size: 1.8rem;
+            background-color: aliceblue;
+            width: 100%;
+            font-size: 1rem;
+            color: rgba(0,0,0,0.5);
+            border: none;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px; 
+        }
+        .c-input{
+            background-color: aliceblue;
+            width: 100%;
+            font-size: 1.8rem;
+            color: rgba(0,0,0);
+            border: none;
+            padding: 5px;
+        }
+        .c3{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .c3-i{
+            margin-top: 20px;
+            display: flexbox;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 500px;
+            margin: auto;
+            padding: 10px;
+        }
+        .order-button{
+            background-color: rgba(220,220,220,0.5);
+            border: 2px solid transparent;
+            font-size: 1.5rem;
+            padding: 5px;
+        }
+        .order-button:hover{
+            border: 2px solid white;
+        }
+        .seec{
+            height: 500px;
+            background-color: rgba(168	,213,	227,0.5);
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <a href="home.html"><div class="nav-logo border"></div></a>
+            
+            <a href="Delivery.html">
+                <div class="nav-address border"><!--For Delivery address-->
+                <p class="a1">Deliver to</p>  
+                <div class="address-i">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <p class="a2">India</p>
+                </div> 
+                </div>
+            </a>
+    
+            <div class="nav-search">
+                <select class="Search-select">
+                    <option>All</option>
+                </select>
+                <input class="search-input" placeholder="Search SmartSelections" name="Search">
+                <div class="search-i">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+    
+            <a href="account.html">
+                <div class="nav-signin border">
+                <p><span><small>Hello, Sign in</small></span></p>
+                <p class="acc">Account</p>
+                </div>
+            </a>
+    
+            <a href="orders.html">
+                <div class="nav-ro border">
+                <p><span><Small>Returns</Small></span></p>
+                <p class="order">& Orders</p>
+                </div>
+            </a>
+    
+            <div class="nav-cart i">
+                <a id="cart" href="My cart.html"><i class="fa-solid fa-cart-shopping"></i>
+                Cart</a>
+            </div>
+        </div>
+    
+        <div id="panel">
+            <a href="#"><div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                ALL
+            </div></a>
+    
+            <div class="panel-ops">
+                <p><a href="today.html">Today's deals</a>
+                <a href="customer.html">Customer service</a>
+                <a href="gift.html">Gift Cards</a>
+                <a href="buy_again.html">Buy Again</a></p>
+            </div>
+        </div>
+    </header>
+    <div class="custom">
+        <div class="c1">
+            <h2>Hi, Tony. How can we help you today??</h2>
+        </div>
+        <div class="c2">
+            <h4>Find more solutions, <i>Type something like</i>, "Delivery charge"</h4><br>
+        <div class="customer-input">
+            <div class="c-i">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="c-search">
+                <input class="c-input" placeholder="" name="Customer service">
+            </div>
+        </div>
+        </div>
+        <div class="c3">
+        <div class="c3-i">
+            <h1>Smart Selections Help</h1><br>
+            <p><i>Enter tracking number sent in Confirmation mail</i></p><br>
+            <div class="c-oh">
+                <h3>Track your Purchase</h3><br>
+            </div>
+            <div class="c-order">
+                <input class="c-input" placeholder="eg:3145326"><br><br>
+                <a href="#"><button class="order-button">Track Order</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+        <div class="seec">
+            <section>
+                <h2>Contact Us</h2>
+                <p>We’re here to assist you with any inquiries or issues you might have. Get in touch with our team using the following options:</p>
+                <ul>
+                    <li><strong>Email:</strong><a href="mailto:Support@SmartSelections.com">Support@SmrtSelections.com</a></li>
+                    <li><strong>Phone:</strong> +91 1674369923</li>
+                    <li><strong>Live Chat:</strong> Available 24/7 on our website</li>
+                </ul>
+            </section><br>
+            <section>
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common customer queries below:</p>
+                <ul>
+                    <li><strong>What is the return policy?</strong> You can return items within 30 days of purchase<br> <a href="#">Learn more</a><br></li>
+                    <li><strong>How do I track my order?</strong> Use the tracking link in your confirmation email or visit <a href="orders.html">Order Tracking</a><br></li>
+                    <li><strong>What payment methods do you accept?</strong> We accept all major credit cards, PayPal, and digital wallets.</li>
+                </ul>
+            </section><br>
+            <section>
+                <h2>Feedback</h2>
+                <p>Your feedback helps us improve. Please let us know how we can better serve you:</p>
+                <a href="feedback-form.html">Submit Feedback</a>
+            </section>
+        </div>
+    
+        <footer>
+            <div class="BTT">
+            <a href="#" class="top">Back to Top &#8593;</a>
+            </div>
+    
+            <div class="foot-panel1">
+                <ul>
+                    <p><h4>Get to know us</h4></p>
+                    <a href="Careers.html">Careers</a>
+                    <a href="Blog.html">Blog</a>
+                    <a href="About.html">About SmartSelections</a>
+                </ul>
+                <ul>
+                    <p><h4>Let Us Help You</h4></p>
+                    <a href="customer.html">Customer service</a>
+                    <a href="Shipping.html">Shipping rates & policies</a>
+                    <a href="Business-faq.html">Business FAQ</a>
+                </ul>
+                <ul>
+                    <p><h4>Support SmartSelections</h4></p>
+                    <a href="#">Sell</a>
+                    <a href="#">Advertise on SmartSelections</a>
+                </ul>
+                <ul>
+                    <p><h4>Buy for business</h4></p>
+                    <a href="today.html">Today's deals</a>
+                    <a href="buy_again.html">Buy again</a>
+                </ul>
+            </div>
+    
+            <div class="foot-panel2">
+               <a href="home.html"><div class="foot-logo"></div></a>
+               <i class="fa-solid fa-globe"></i>
+               <div class="icp-nav-globe-img-2 icp-button-globe-2"></div><span class="icp-color-base">English</span><span class="nav-arrow icp-up-down-arrow"></span><span class="aok-hidden" style="display:none">Choose a language for shopping.</span>
+               
+            </div>
+    
+            <div class="foot-end">
+            Made with &hearts; by SmartSelections <br>
+            &#169; 1980-2050, SmartSelections.com, Inc.
+            </div>
+        </footer>
+</body>
+</html>
